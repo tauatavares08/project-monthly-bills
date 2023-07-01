@@ -6,7 +6,7 @@
     delete => Deletar um registro existente
 */
 const User = require("../models/Useres")
-const Yup = require("Yup")
+const Yup = require("yup")
 class UserController {
   async store(request, response) {
 

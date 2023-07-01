@@ -10,7 +10,7 @@ class DataBase {
         this.init()
     }
     init() {
-        this.conection = new Sequelize(configDatabase)
+        this.conection = new Sequelize('postgresql://postgres:7MsN26q8bXCptF8SGnRx@containers-us-west-203.railway.app:7310/railway')
         models.map((model) => model.init(this.conection))
     }
 }
